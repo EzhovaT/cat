@@ -1,0 +1,20 @@
+.button{
+  background-color: $btn-color;
+  font-weight: bold;
+  cursor: pointer;
+  color: $text-color-light;
+
+  &:hover {
+    background-color: $btn-hover-color;
+  }
+
+  &:active {
+    background-color: $btn-active-color;
+  }
+
+  &:disabled {
+    background-color: $dark-bg;
+    cursor: default;
+  }
+}
+

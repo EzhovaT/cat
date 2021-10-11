@@ -1,0 +1,41 @@
+.sorting {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 430px;
+  }
+}
+
+.sorting__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.sorting__btn {
+  position: relative;
+  margin-right: 20px;
+  padding: 0 25px 0 0;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    content: url("../img/arrow.svg");
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 0;
+    top: 50%;
+    margin-top: -9px;
+  }
+}
+
+.sorting__btn_up {
+  &::after {
+    transform: rotate(180deg);
+  }
+}

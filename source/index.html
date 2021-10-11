@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cat-task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <img class="logo" src="img/logo.svg" alt="Логотип компании" width="58" height="58"/>
+          <h1 class="visually-hidden">Сервис для покупки кота</h1>
+          <div class="header__nav">
+            <button class="menu-btn" type="button"></button>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="">Main</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="">Gallery</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="">News</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="">Profile</a>
+                </li>
+              </ul>
+              <div class="contact">
+                <a class="contact__link" href="tel:+544349000000">+544 3490 00000</a>
+                <p class="contact__descr">Звони скорее!</p>
+              </div>
+            </nav>
+
+          </div>
+        </div>
+        <span class="title">Найдено 349 котов</span>
+      </div>
+    </header>
+
+    <div class="container">
+      <main class="main" id="main">
+        <div class="sorting">
+          <p class="sorting__title">Сортировать по:</p>
+          <button class="sorting__btn" id="sorting-btn-price" type="button">Цене</button>
+          <button class="sorting__btn" id="sorting-btn-age" type="button">Возрасту</button>
+        </div>
+
+        <a class="main__btn-up button main__btn-up_hide" href="#main">Наверх</a>
+        <div class="main__cards">
+          <div class="card card_discount" data-age="2" data-price="30000">
+            <div class="card__img-box">
+              <picture class="card__picture">
+                <source class="card__image-source" type="image/webp" srcset="img/cat1@1x.webp 1x, img/cat1@2x.webp 2x"/>
+                <img class="card__img" width="130" src="img/cat1@1x.jpg" srcset="img/cat1@2x.jpg 2x" alt="Фотография кота"/>
+              </picture>
+              <div class="card__like"></div>
+            </div>
+            <div class="card__descr">
+              <p class="card__title">Кот полосатый</p>
+              <div class="constitution">
+                <p class="constitution__descr">Коричневый окрас</p>
+                <p class="constitution__descr"><b class="constitution__strong">2 мес. </b>Возраст</p>
+                <p class="constitution__descr"><b class="constitution__strong">4 </b>Кол-во лап</p>
+              </div>
+              <div class="card__price">30 000 руб.</div>
+            </div>
+            <button class="card__btn button" type="button">Купить</button>
+          </div>
+
+          <div class="card" data-age="2" data-price="40000">
+            <div class="card__img-box">
+              <picture class="card__picture">
+                <source class="card__image-source" type="image/webp" srcset="img/cat2@1x.webp 1x, img/cat2@2x.webp 2x"/>
+                <img class="card__img" width="130" src="img/cat2@1x.jpg" srcset="img/cat2@2x.jpg 2x" alt="Фотография кота"/>
+              </picture>
+              <div class="card__like"></div>
+            </div>
+            <div class="card__descr">
+              <p class="card__title">Кот полосатый</p>
+              <div class="constitution">
+                <p class="constitution__descr">Коричневый окрас</p>
+                <p class="constitution__descr"><b class="constitution__strong">2 мес. </b>Возраст</p>
+                <p class="constitution__descr"><b class="constitution__strong">4 </b>Кол-во лап</p>
+              </div>
+              <div class="card__price">40 000 руб.</div>
+            </div>
+            <button class="card__btn button" type="button">Купить</button>
+          </div>
+
+          <div class="card"  data-age="2" data-price="20000">
+            <div class="card__img-box">
+              <picture class="card__picture">
+                <source class="card__image-source" type="image/webp" srcset="img/cat3@1x.webp 1x, img/cat3@2x.webp 2x"/>
+                <img class="card__img" width="130" src="img/cat3@1x.jpg" srcset="img/cat3@2x.jpg 2x" alt="Фотография кота"/>
+              </picture>
+              <div class="card__like card__like_active"></div>
+            </div>
+            <div class="card__descr">
+              <p class="card__title">Кот полосатый</p>
+              <div class="constitution">
+                <p class="constitution__descr">Коричневый окрас</p>
+                <p class="constitution__descr"><b class="constitution__strong">2 мес. </b>Возраст</p>
+                <p class="constitution__descr"><b class="constitution__strong">4 </b>Кол-во лап</p>
+              </div>
+              <div class="card__price">20 000 руб.</div>
+            </div>
+            <button class="card__btn button" type="button" disabled>Продан</button>
+          </div>
+
+          <div class="card"  data-age="2" data-price="25000">
+            <div class="card__img-box">
+              <picture class="card__picture">
+                <source class="card__image-source" type="image/webp" srcset="img/cat1@1x.webp 1x, img/cat1@2x.webp 2x"/>
+                <img class="card__img" width="130" src="img/cat1@1x.jpg" srcset="img/cat1@2x.jpg 2x" alt="Фотография кота"/>
+              </picture>
+              <div class="card__like"></div>
+            </div>
+            <div class="card__descr">
+              <p class="card__title">Кот полосатый</p>
+              <div class="constitution">
+                <p class="constitution__descr">Коричневый окрас</p>
+                <p class="constitution__descr"><b class="constitution__strong">2 мес. </b>Возраст</p>
+                <p class="constitution__descr"><b class="constitution__strong">4 </b>Кол-во лап</p>
+              </div>
+              <div class="card__price">25 000 руб.</div>
+            </div>
+            <button class="card__btn button" type="button">Купить</button>
+          </div>
+
+          <div class="card card_discount" data-age="2" data-price="30000">
+            <div class="card__img-box">
+              <picture class="card__picture">
+                <source class="card__image-source" type="image/webp" srcset="img/cat2@1x.webp 1x, img/cat2@2x.webp 2x"/>
+                <img class="card__img" width="130" src="img/cat2@1x.jpg" srcset="img/cat2@2x.jpg 2x" alt="Фотография кота"/>
+              </picture>
+              <div class="card__like"></div>
+            </div>
+            <div class="card__descr">
+              <p class="card__title">Кот полосатый</p>
+              <div class="constitution">
+                <p class="constitution__descr">Коричневый окрас</p>
+                <p class="constitution__descr"><b class="constitution__strong">2 мес. </b>Возраст</p>
+                <p class="constitution__descr"><b class="constitution__strong">4 </b>Кол-во лап</p>
+              </div>
+              <div class="card__price">30 000 руб.</div>
+            </div>
+            <button class="card__btn button" type="button">Купить</button>
+          </div>
+
+          <div class="card"  data-age="3" data-price="10000">
+            <div class="card__img-box">
+              <picture class="card__picture">
+                <source class="card__image-source" type="image/webp" srcset="img/cat1@1x.webp 1x, img/cat1@2x.webp 2x"/>
+                <img class="card__img" width="130" src="img/cat1@1x.jpg" srcset="img/cat1@2x.jpg 2x" alt="Фотография кота"/>
+              </picture>
+              <div class="card__like card__like_active"></div>
+            </div>
+            <div class="card__descr">
+              <p class="card__title">Кот полосатый</p>
+              <div class="constitution">
+                <p class="constitution__descr">Коричневый окрас</p>
+                <p class="constitution__descr"><b class="constitution__strong">3 мес. </b>Возраст</p>
+                <p class="constitution__descr"><b class="constitution__strong">4 </b>Кол-во лап</p>
+              </div>
+              <div class="card__price">10 000 руб.</div>
+            </div>
+            <button class="card__btn button" type="button" disabled>Продан</button>
+          </div>
+
+          <template id="card-template">
+            <div class="card" data-age="2" data-price="10000">
+              <div class="card__img-box">
+                <img class="card__img" src="img/cat1.jpg" alt="Фотография кота" width="130">
+                <div class="card__like"></div>
+              </div>
+              <div class="card__descr">
+                <p class="card__title">Кот полосатый</p>
+                <div class="constitution">
+                  <p class="constitution__descr">Коричневый окрас</p>
+                  <p class="constitution__descr"><b class="constitution__strong">2 мес. </b>Возраст</p>
+                  <p class="constitution__descr"><b class="constitution__strong">4 </b>Кол-во лап</p>
+                </div>
+                <div class="card__price">10 000 руб.</div>
+              </div>
+              <button class="card__btn button" type="button">Купить</button>
+            </div>
+          </template>
+        </div>
+
+        <div class="main__buttons">
+          <button class="main__btn-show-more" type="button">Показать еще 20</button>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__tagline">
+          <p class="footer__title">Успей купить!</p>
+          <p class="footer__subtitle">Подпишись и успей словить все акции</p>
+        </div>
+
+        <form class="form" id="form" method="POST" action="#" enctype="multipart/form-data" autocomplete="off">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend visually-hidden">Форма для подписки на новости</legend>
+            <div class="form__field">
+              <label class="form__field-label visually-hidden" for="user-email">Email</label>
+              <input class="form__field-input" type="text" id="user-email" name="user-email" placeholder="Email" required/>
+              <p class="form__field-error-mess"></p>
+            </div>
+
+          <button class="form__button button" type="submit">Подписаться</button>
+
+          <div class="form__field form__field_checkbox checkbox">
+            <label class="checkbox__label" for="contract">
+              <input class="checkbox__input" type="checkbox" id="contract" name="contract" required>
+              <span class="checkbox__span"></span>
+              <small class="checkbox__small-text">Подписаться на новости</small>
+            </label>
+          </div>
+          </fieldset>
+        </form>
+      </footer>
+    </div>
+
+    <div class="popup ">
+      <div class="popup__window">
+        <div class="popup__block">
+          <div class="popup__content">
+            <p class="popup__title">Добавлено в избранное</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

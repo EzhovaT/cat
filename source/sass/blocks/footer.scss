@@ -1,0 +1,42 @@
+.footer {
+  padding: 20px;
+  background-color: $dark-bg;
+  color: $text-color-light;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 80px;
+  }
+}
+
+.footer__tagline {
+  @media (min-width: $tablet-width) {
+    width: 40%;
+  }
+}
+
+.footer__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 59px;
+  }
+}
+
+.footer__subtitle {
+  margin: 0;
+  font-size: 22px;
+
+  @media (min-width: $small-desktop-width) {
+    font-size: 28px;
+  }
+}

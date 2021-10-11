@@ -1,0 +1,72 @@
+.main {
+  position: relative;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 0 50px;
+  }
+}
+
+.main__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.main__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main__btn-show-more {
+  width: 200px;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: transparent;
+  border: 1px solid $btn-border;
+  border-radius: 10px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 15px;
+    padding: 15px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+    min-width: 380px;
+    min-height: 65px;
+  }
+}
+
+.main__btn-up {
+  display: block;
+  position: sticky;
+  margin-left: auto;
+  top: 210px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  font-size: 0;
+  background-image: url("../img/arrow-up.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.main__btn-up_hide {
+  display: none;
+}
